@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Notes - My Desk</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <a href="homepage.html">My Desk</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="homepage.html">Workspace</a></li>
+                <li><a href="tasks.html">To-Do List</a></li>
+                <li><a href="notes.html">My Notes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="notes-page">
+            <h1 class="page-title">My Notes</h1>
+            <p class="subtitle">Capture your ideas and important information in a simple, organized way.</p>
+            
+            <div class="notes-controls">
+                <button id="add-note-btn">Add Note</button>
+                <div class="search-area">
+                    <input type="text" id="search-input" placeholder="Search notes...">
+                </div>
+            </div>
+            <div id="notes-grid" class="notes-grid"></div>
+            <p id="empty-state" class="empty-state">No notes found. Click "Add Note" to get started.</p>
+        </section>
+    </main>
+
+    <div id="note-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <form id="note-form">
+                <input type="hidden" id="note-id">
+                <input type="text" id="note-title" placeholder="Note Title" required>
+                <textarea id="note-content" rows="10" placeholder="Note content..." required></textarea>
+                <div class="modal-actions">
+                    <button type="button" id="cancel-note-btn">Cancel</button>
+                    <button type="submit" id="save-note-btn">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Affy © 2025. My Thought Organiser.</p>
+    </footer>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

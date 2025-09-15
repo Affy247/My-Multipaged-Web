@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List - My Desk</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <a href="homepage.html">My Desk</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="homepage.html">Workspace</a></li>
+                <li><a href="tasks.html">To-Do List</a></li>
+                <li><a href="notes.html">My Notes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="task-page">
+            <h1 class="page-title">Your To-Do List</h1>
+            <p class="subtitle">Stay organized and productive by tracking your daily tasks and goals.</p>
+            
+            <div class="task-deck">
+                <div class="input-area">
+                    <input type="text" id="task-input" placeholder="Add a new task...">
+                    <button id="add-task-btn">Add</button>
+                </div>
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="pending">Pending</button>
+                    <button class="filter-btn" data-filter="completed">Completed</button>
+                </div>
+                <ul id="task-list"></ul>
+                <div class="task-stats">
+                    <span id="tasks-remaining">0 tasks remaining</span>
+                    <button id="clear-completed-btn">Clear Completed</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Affy © 2025. My Thought Organiser.</p>
+    </footer>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
