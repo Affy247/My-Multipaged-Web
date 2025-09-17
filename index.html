@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Organizer</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <a href="index.html">My Desk</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Workspace</a></li>
+                <li><a href="tasks.html">To-Do List</a></li>
+                <li><a href="notes.html">My Notes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Your Workspace.</h1>
+                <p>My Personal Organiser: your personal hub for managing daily tasks, notes, and ideas. Let's get oragnised!</p>
+                <br>
+                <a href="tasks.html" class="cta-button">Start Organizing</a>
+                <br>
+            </div>
+            <div class="hero-image">
+                <div class="placeholder-graphic">✏️</div>
+            </div>
+        </section>
+        
+        <section class="features">
+            <h2>Your Organizer Modules</h2>
+            <div class="features-grid">
+                <article class="feature-card">
+                    <h3>✅ To-Do List</h3>
+                    <p>Track your daily tasks and bigger projects. Check off your accomplishments as you go.</p>
+                    <a href="tasks.html">Go to To-Do List →</a>
+                </article>
+                <article class="feature-card">
+                    <h3>📝 My Notes</h3>
+                    <p>Securely store your thoughts, ideas, and important information in one place.</p>
+                    <a href="notes.html">Go to My Notes →</a>
+                </article>
+                <article class="feature-card">
+                    <h3>✉️ Contact</h3>
+                    <p>Got a question or feedback? We'd love to hear from you. Get in touch with us here.</p>
+                    <a href="contact.html">Send a Message →</a>
+                </article>
+            </div>
+        </section>
+
+        
+        <section class="status">
+            <h2>Your Current Status</h2>
+            <div class="stats">
+                <div class="stat">
+                    <span id="total-tasks-stat">0</span>
+                    <p>Total Tasks</p>
+                </div>
+                <div class="stat">
+                    <span id="pending-tasks-stat">0</span>
+                    <p>Pending Tasks</p>
+                </div>
+                <div class="stat">
+                    <span id="completed-tasks-stat">0</span>
+                    <p>Tasks Completed</p>
+                </div>
+                <div class="stat">
+                    <span id="total-notes-stat">0</span>
+                    <p>Notes Entered</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>Affy © 2025. My Personal Organiser.</p>
+    </footer>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
