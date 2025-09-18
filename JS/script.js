@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
    // Determine the current page to run specific functions
 const currentPage = window.location.pathname.split('/').pop().replace('.html', '');
 
-if (currentPage === 'homepage' || currentPage === '') {
+if (currentPage === 'index' || currentPage === '') {
     updateHomepageStats();
 }
 if (currentPage === 'tasks' || currentPage === 'tasks.html') {
